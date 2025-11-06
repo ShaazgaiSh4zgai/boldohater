@@ -51,32 +51,40 @@
   </div>
 
   <script>
-    const files = {
-      'word.exe': 'files/word.exe',
-      'shaz': 'files/shaz.txt'
-    };
+  const files = {
+    'word.exe': 'files/word.exe',
+    'shaz': 'files/shaz.txt'
+  };
 
-    const input = document.getElementById('commandInput');
-    const output = document.getElementById('output');
+  const input = document.getElementById('commandInput');
+  const output = document.getElementById('output');
 
-    input.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') {
-        const cmd = input.value.trim();
-        if (files[cmd]) {
-          output.textContent += `\nDownloading ${cmd}...`;
+  input.addEventListener('keydown', async function(e) {
+    if (e.key === 'Enter') {
+      const cmd = input.value.trim();
+      if (files[cmd]) {
+        output.textContent += `\nPreparing ${cmd} for download...`;
+        try {
+          const response = await fetch(files[cmd]);
+          if (!response.ok) throw new Error('File not found or blocked');
+          const blob = await response.blob();
+          const url = window.URL.createObjectURL(blob);
           const a = document.createElement('a');
-          a.href = files[cmd];
-          a.download = cmd;
+          a.href = url;
+          a.download = cmd; // Forces correct file name
+          document.body.appendChild(a);
           a.click();
+          a.remove();
+          window.URL.revokeObjectURL(url);
           output.textContent += `\nDownload started for ${cmd}`;
-        } else {
-          output.textContent += `\nFile not found: ${cmd}`;
+        } catch (err) {
+          output.textContent += `\nError: Could not download ${cmd}`;
         }
-        input.value = '';
-        output.scrollTop = output.scrollHeight;
+      } else {
+        output.textContent += `\nFile not found: ${cmd}`;
       }
-    });
-  </script>
-</body>
-</html>
-
+      input.value = '';
+      output.scrollTop = output.scrollHeight;
+    }
+  });
+</script>
