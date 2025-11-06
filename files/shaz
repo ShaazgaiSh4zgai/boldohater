@@ -1,0 +1,252 @@
+{
+  "ESP key": {
+    "Key": 78,
+    "Mode": 2,
+    "Show": false
+  },
+  "Enemy ESP": {
+    "Enable": true,
+    "Flags": [
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      }
+    ],
+    "Head": {
+      "Alpha": 0.46896553,
+      "Color": "#ff0000",
+      "Enabled": true
+    },
+    "Name": {
+      "Font": 0
+    },
+    "Skeleton": {
+      "Alpha": 0.0,
+      "Color": "#575757",
+      "Enabled": true
+    },
+    "Skeleton thickness": 1.0
+  },
+  "Legitbot config": [
+    {
+      "FOV": 0.7,
+      "Hitboxes": 3,
+      "RCS amount": 91,
+      "RCS bullet": 1,
+      "Smooth": {
+        "Type": 2,
+        "X": 16,
+        "Y": 16
+      },
+      "Targeting": 1
+    },
+    {
+      "FOV": 1.2,
+      "Hitboxes": 1,
+      "Override": true,
+      "RCS": false,
+      "Smooth": {
+        "Type": 2,
+        "X": 10,
+        "Y": 10
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "FOV": 0.0,
+      "Hitboxes": 7,
+      "Override": true,
+      "RCS": false,
+      "Smooth": {
+        "Type": 2,
+        "X": 10,
+        "Y": 13
+      },
+      "Targeting": 1
+    }
+  ],
+  "Legitbot global": {
+    "Priority": 2
+  },
+  "Legitbot key": {
+    "Key": 1,
+    "Mode": 1,
+    "Show": true
+  },
+  "Misc": {
+    "Accent": {
+      "Alpha": 0.23448277,
+      "Color": "#ffffff"
+    },
+    "DiscordRPC": false,
+    "Hitsound": 1,
+    "Keybinds": {
+      "Pos": {
+        "X": 1480.0,
+        "Y": 112.0
+      }
+    },
+    "Spotify": {
+      "Enabled": false
+    },
+    "Watermark": {
+      "Enabled": false
+    }
+  },
+  "Other ESP": {
+    "Bomb": {
+      "Enable": true,
+      "Icon": {
+        "Alpha": 0.17241377,
+        "Color": "#62ff00",
+        "Enabled": true
+      }
+    }
+  },
+  "Team ESP": {
+    "Flags": [
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      },
+      {
+        "Case": 2,
+        "Flags": 2
+      }
+    ],
+    "Head": {
+      "Alpha": 0.33793104,
+      "Color": "#ff0101",
+      "Enabled": true
+    },
+    "Skeleton": {
+      "Alpha": 0.0,
+      "Color": "#ffffff",
+      "Enabled": true
+    }
+  },
+  "Trigger": [
+    {
+      "Between shots delay": 10,
+      "Enable": true,
+      "First shot delay": 69,
+      "Magnet": false
+    },
+    {
+      "Between shots delay": 503,
+      "Enable": true,
+      "First shot delay": 69,
+      "Magnet": false
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "Between shots delay": 69,
+      "Enable": true,
+      "First shot delay": 69,
+      "Magnet": false
+    }
+  ],
+  "Triggerbot key": {
+    "Key": 6,
+    "Mode": 2,
+    "Show": true
+  },
+  "Visuals": {
+    "CC": {
+      "CBottom": false,
+      "CColor": {
+        "Alpha": 0.3448276,
+        "Color": "#ffffff"
+      },
+      "CEnable": true,
+      "CLeft": false,
+      "CLength": 1,
+      "COffset": 0,
+      "COutline": false,
+      "CRight": false,
+      "CTop": false
+    }
+  }
+}
